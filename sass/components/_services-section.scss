@@ -1,0 +1,36 @@
+.services__section {
+	padding-bottom: 94px;
+}
+.services__title {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+.services__list {
+	@extend %list;
+	@include centredFlex;
+}
+.services__item:not(:last-child) {
+	margin-right: 30px;
+}
+.services__overlay {
+	position: relative;
+}
+.services__photo-description {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+
+	@include centredFlex;
+
+	font-weight: 700;
+	line-height: 1.17;
+	color: $page-maintitle-color;
+	text-transform: uppercase;
+
+	background-color: #2f303acc;
+}

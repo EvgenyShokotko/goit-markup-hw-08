@@ -1,0 +1,32 @@
+$primary-text-colour: #212121;
+$title-text-colour: #757575;
+$accent-colour: #2196f3;
+$page-maintitle-color: #ffffff;
+$hero-footer-backcolor: #2f303a;
+$change-color-button: #188ce8;
+$transition-cube: cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+	background-color: $page-maintitle-color;
+	color: $primary-text-colour;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+.conteiner {
+	@extend %conteiner;
+}

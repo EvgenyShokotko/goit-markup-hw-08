@@ -1,0 +1,26 @@
+.address__list {
+	@extend %list;
+}
+
+.address__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.address__link {
+	display: block;
+
+	text-decoration: none;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+
+	color: $page-maintitle-color;
+	transition: color 250ms $transition-cube;
+	&:hover,
+	&:focus {
+		color: $accent-colour;
+	}
+}
+.address__link--grey {
+	color: rgba(255, 255, 255, 0.6);
+	transition: color 250ms $transition-cube;
+}

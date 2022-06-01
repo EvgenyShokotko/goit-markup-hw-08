@@ -1,0 +1,26 @@
+.footer {
+	background-color: $hero-footer-backcolor;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer--flex {
+	@include centredFlex($type: flex, $position: flex-start, $direction: baseline);
+}
+.footer__firstblock {
+	margin-right: 70px;
+}
+.footer__social-block {
+	margin-right: auto;
+}
+.footer__social-bl-title {
+	display: block;
+
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: $page-maintitle-color;
+	line-height: 1.14;
+
+	margin-bottom: 20px;
+	letter-spacing: 0.03em;
+}

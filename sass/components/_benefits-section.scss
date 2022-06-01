@@ -1,0 +1,37 @@
+.benefits__section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.benefits-title {
+	@extend %hidden;
+}
+.benefits__list {
+	@extend %list;
+	@include centredFlex;
+}
+.benefits__item {
+	width: 270px;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+.benefits__decoration-bloc {
+	@include centredFlex;
+	margin-bottom: 30px;
+	height: 120px;
+	background-color: rgba(245, 244, 250, 1);
+}
+.benefits__title {
+	margin-bottom: 10px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+.benefits__description {
+	color: $title-text-colour;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}

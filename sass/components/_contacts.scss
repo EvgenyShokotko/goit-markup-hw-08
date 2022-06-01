@@ -1,0 +1,32 @@
+.contacts__list {
+	@extend %list;
+	@include centredFlex;
+	margin-left: auto;
+
+	transition: color 250ms $transition-cube;
+}
+.contacts__item:not(:last-child) {
+	margin-right: 50px;
+}
+.contacts__link {
+	@include centredFlex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	text-decoration: none;
+	color: $title-text-colour;
+	transition: color 250ms $transition-cube;
+
+	&:hover,
+	&:focus {
+		color: $accent-colour;
+	}
+}
+.contacts-icon {
+	margin-right: 10px;
+	fill: currentColor;
+	&:hover,
+	&:focus {
+		color: $accent-colour;
+	}
+}

@@ -1,0 +1,38 @@
+.clients__section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.clients__title {
+	margin-bottom: 50px;
+
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.17;
+	text-align: center;
+}
+.clients__list {
+	@extend %list;
+	@include centredFlex;
+}
+.clients__item:not(:last-child) {
+	margin-right: 30px;
+}
+.clients__link {
+	@include centredFlex;
+	width: 170px;
+	height: 92px;
+
+	transition: color 250ms $transition-cube, border 250ms $transition-cube;
+
+	color: rgba(175, 177, 184, 1);
+	border: solid 1px rgba(175, 177, 184, 1);
+	border-radius: 4px;
+	&:hover,
+	&:focus {
+		border: solid 1px $accent-colour;
+		color: $accent-colour;
+	}
+}
+.clients__image {
+	fill: currentColor;
+}
