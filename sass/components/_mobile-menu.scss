@@ -1,0 +1,37 @@
+@media screen and (max-width:479px) {
+    .menu__button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+    
+    }
+    .menu__button .menu__icon--vector {
+        display: none;
+    }
+    .menu__button.is-open .menu__icon--vector {
+        display: block;
+    }
+    .menu__button.is-open .menu__icon--menu {
+        display: none;
+    }
+    .menu__content {
+        display: none;
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        &.is-open {
+            display: block;
+        }
+    }
+}
+@media screen and (min-width: 480px) {
+    .menu__button {
+        display: none;
+    }
+}
+
+

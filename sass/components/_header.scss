@@ -1,6 +1,18 @@
 .header__border {
 	border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
-.header--flex {
-	@include centredFlex;
+
+@media screen and (min-width:480px) {
+	.header--flex {
+		position: relative;
+	}
 }
+
+
+
+@media screen and (min-width:1200px) {
+	.header--flex {
+		@include centredFlex;
+	}
+}
+
