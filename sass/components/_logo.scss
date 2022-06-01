@@ -1,5 +1,13 @@
+@media screen and (max-width:479px) {
 .logo {
-	// display: block;
+	margin-right: 276px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+}
+
+.logo {
+	display: block;
 
 	transition: color 250ms $transition-cube;
 
@@ -14,15 +22,21 @@
 		color: $accent-colour;
 	}
 }
-.logo--position-top {
-	margin-right: 94px;
-	padding-top: 24px;
-	padding-bottom: 25px;
-}
-.logo--position-bottom {
-	margin-bottom: 20px;
-	color: $page-maintitle-color;
-}
-.logo--blue {
-	color: $accent-colour;
-}
+@media screen and (min-width:480px) {
+
+	.logo--position-top {
+		margin-right: 94px;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+	.logo--position-bottom {
+		margin-bottom: 20px;
+		color: $page-maintitle-color;
+	}
+
+	}
+	.logo--blue {
+		color: $accent-colour;
+	}
+
+
