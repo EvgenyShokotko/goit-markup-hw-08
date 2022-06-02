@@ -1,0 +1,40 @@
+.contacts__list {
+	@extend %list;
+    padding-left: 40px;
+    padding-bottom: 64px;
+	transition: color 250ms $transition-cube;
+}
+.contacts__item:not(:last-child) {
+	margin-bottom: 32px;
+}
+
+.contacts__link--mobile {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+	text-decoration: none;
+	color: $accent-colour;
+	transition: color 250ms $transition-cube;
+
+}
+.contacts__link--mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    color: $title-text-colour;
+    &:hover,
+    &:focus {
+    color: $accent-colour;
+    	}
+}
+.contacts-icon {
+display: none;
+	}
+

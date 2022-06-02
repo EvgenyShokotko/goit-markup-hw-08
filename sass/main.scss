@@ -1,9 +1,15 @@
 @import "./utils/variables";
 @import "./utils/placeholder";
 @import "./utils/mixin";
-@import "./components/header";
-@import "./components/logo";
-@import "./components/mobile-menu";
+@import "./components/new/logo";
+@import "./components/new/mobile-button";
+@import "./components/new/mobile-menu";
+@import "./components/new/navigation";
+@import "./components/new/contacts";
+@import "./components/new/social-mobile"
+// @import "./components/header";
+// @import "./components/logo";
+// @import "./components/mobile-menu";
 // @import "./components/navigaton";
 // @import "./components/contacts";
 // @import "./components/hero-section";

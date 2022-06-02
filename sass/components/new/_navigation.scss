@@ -1,0 +1,27 @@
+.navigation__list {
+	@extend %list;
+    padding-top: 48px;
+    padding-left: 40px;
+	padding-bottom: 302px;
+}
+.navigation__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+.navigation__link {
+
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.18;
+	letter-spacing: 0.02em;
+	color: $primary-text-colour;
+
+	transition: color 250ms $transition-cube;
+	&:hover,
+	&:focus {
+		color: $accent-colour;
+	}
+}
+.navigation__link--current {
+	color: $accent-colour;
+}
