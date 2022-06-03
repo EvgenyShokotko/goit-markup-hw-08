@@ -1,25 +1,9 @@
 .header__border {
 	border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
-@media screen and (max-width:480px) {
-	.header__border {
-		position: relative;
-	}
-}
-
-@media screen and (max-width:480px) {
-	.header--flex {
-		
+@media screen and (min-width: 767px) {
+    .header--flex {
 		display: flex;
-		align-items: baseline;
 	}
-}
-
-
-
-// @media screen and (min-width:480px) {
-// 	.header--flex {
-// 		@include centredFlex;
-// 	}
-// }
+  }
 

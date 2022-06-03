@@ -1,0 +1,42 @@
+    // .mobile__button {
+    //     position: absolute;
+    //     top: 10px;
+    //     left: 425px;
+    //     z-index: 100;
+
+    //     margin: 0;
+    //     padding: 0;
+    //     border: none;
+    //     background-color: transparent;
+    //     width: 40px;
+    //     height: 40px;
+            
+    // }
+    .mobile__button .menu__icon--vector {
+        display: none;
+    }
+    .mobile__button.is-open .menu__icon--vector {
+        display: block;
+    }
+    .mobile__button.is-open .menu__icon--menu {
+        display: none;
+    }
+    .mobile__button {
+        position: relative;
+        z-index: 9;
+      
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        margin-left: auto;
+        padding: 0;
+      
+     
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+      }
