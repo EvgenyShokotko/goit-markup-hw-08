@@ -8,6 +8,7 @@
 @import "./shared/buttons";
 @import "./shared/section";
 @import "./shared/social-icons";
+@import "./shared/image";
 
 // Components
 @import "./components/header/header";
@@ -20,10 +21,10 @@
 @import "./components/mobile-menu/social-mobile";
 @import "./components/benefits-section/benefits-section";
 @import "./components/service-section/services-section";
-@import "./components/team-section";
-// @import "./components/clients-section";
+@import "./components/team-section/team-section";
+@import "./components/clients-section/clients-section";
 // @import "./components/products-section";
-// @import "./components/footer";
+@import "./components/footer";
 // @import "./components/address";
 // @import "./components/subscribe-block";
 // @import "./components/backdrop";

@@ -1,26 +1,36 @@
 .clients__section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@extend .section;
 }
 .clients__title {
-	margin-bottom: 50px;
-
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 1.17;
+	margin-bottom: 30px;
+	@include fonts(700, 28px, 33px, 0.03em);
 	text-align: center;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+		@include fonts(null, 36px, 42px, null);
+	}
 }
+
 .clients__list {
 	@extend %list;
 	@include centredFlex;
+	@include flexWrap(wrap, 30px);
 }
-.clients__item:not(:last-child) {
-	margin-right: 30px;
-}
+
 .clients__link {
 	@include centredFlex;
-	width: 170px;
-	height: 92px;
+	@media screen and (max-width: 767px) {
+		width: 210px;
+		height: 92px;
+	}
+	@media screen and (max-width: 1199px) {
+		width: 226px;
+		height: 92px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+		height: 92px;
+	}
 
 	transition: color 250ms $transition-cube, border 250ms $transition-cube;
 

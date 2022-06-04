@@ -3,12 +3,13 @@
 	background-color: #f5f4fa;
 }
 .team__title {
-	margin-bottom: 50px;
-
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
+	margin-bottom: 30px;
+	@include fonts(700, 28px, 33px, 0.03em);
 	text-align: center;
+	@media screen and (min-width: 1200px) {
+		@include fonts(null, 36px, 42px, null);
+		margin-bottom: 50px;
+	}
 }
 .team__list {
 	@extend %list;
@@ -19,6 +20,16 @@
 	text-align: center;
 	background-color: $page-maintitle-color;
 }
+.team__image {
+	@extend .img;
+	@media screen and (max-width: 767px) {
+		width: 450px;
+	}
+	@media screen and (max-width: 1199px) {
+		width: 354px;
+	}
+}
+
 .team__border {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -28,15 +39,12 @@
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .team__name {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.19;
+	@include fonts(500, 16px, 19px, 0.03em);
 	margin-bottom: 10px;
 }
 .team__proffesion {
+	@include fonts(400, 16px, 19px, 0.03em);
 	color: $title-text-colour;
-	font-size: 16px;
-	line-height: 1.19;
-	margin: 0;
+
 	margin-bottom: 16px;
 }

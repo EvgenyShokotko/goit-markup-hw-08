@@ -1,23 +1,20 @@
 .services__section {
+	@extend .section;
 	display: none;
 	@media screen and (min-width: 1200px) {
 		display: block;
-		padding-bottom: 94px;
+		padding-top: 0;
 	}
 }
 .services__title {
-	margin-bottom: 50px;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
 	text-align: center;
+	margin-bottom: 50px;
+	@include fonts(700, 36px, 42px, 0.03em);
 }
 .services__list {
 	@extend %list;
 	@include centredFlex;
-}
-.services__item:not(:last-child) {
-	margin-right: 30px;
+	@include flexWrap(wrap, 30px);
 }
 .services__overlay {
 	position: relative;
