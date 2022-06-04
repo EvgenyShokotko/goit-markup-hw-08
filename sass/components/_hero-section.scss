@@ -16,8 +16,12 @@
 	background-size: cover;
 }
 .hero__conteiner {
-	width: 696px;
+	@extend .container;
+	@media screen and (min-width: 780px) {
+		width: 696px;
+	  }
 }
+
 
 .hero__title {
 	display: block;

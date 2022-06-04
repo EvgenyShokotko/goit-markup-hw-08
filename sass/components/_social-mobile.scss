@@ -2,8 +2,8 @@
 .social-mobile__list {
     @media screen and (max-width: 767px) {
         display: flex;
-        padding-left: 40px;
-    }
+        align-items: baseline;
+        flex-wrap: wrap;           }
     @media screen and (min-width: 768px) {
         display: none;
     }  
@@ -13,16 +13,28 @@
     .social-mobile__item:not(:last-child) {
         margin-right: 20px;
     }
+    .social-mobile__item:not(:last-child)::after {
+        content: '';
+    
+        display: inline-block;
+    
+        width: 2px;
+        height: 22px;
+    
+        margin: 0 10px;
+    
+        background-color: #21212133;
+      }
     .social-mobile__link {
         font-family: 'Roboto';
         font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        text-decoration: none;
     
-    letter-spacing: 0.02em;
+        letter-spacing: 0.02em;
     
-    color: #2196F3;
+        color: #2196F3;
     }
 

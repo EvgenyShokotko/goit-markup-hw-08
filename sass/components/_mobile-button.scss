@@ -30,11 +30,16 @@
         margin: 0;
         margin-left: auto;
         padding: 0;
-      
-     
+        color: $change-color-button;
+          
         background-color: transparent;
         border: none;
-        cursor: pointer;
+        &:hover,
+        &:focus {
+        fill: currentColor;
+  }
+
+
       
         @media screen and (min-width: 768px) {
           display: none;
