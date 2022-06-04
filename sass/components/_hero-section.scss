@@ -1,6 +1,6 @@
 .hero__section {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 118px;
+	padding-bottom: 118px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -14,6 +14,43 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);
+	  }
+	
+	  @media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);
+	  }
+	
+	  @media screen and (min-width: 481px) and (max-width: 768.98px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);
+	
+		@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);;
+		}
+	
+		@media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+		  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);;
+		}
+	  }
+	
+	  @media screen and (min-width: 769px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);;
+	
+		@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);;
+		}
+	
+		@media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+		  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionphoto.jpg);;
+		}
+	  }
+	
+	  @media screen and (min-width: 1200px) {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	  }
 }
 .hero__conteiner {
 	@extend .container;

@@ -2,12 +2,16 @@
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+.conteiner {
+	@extend .container;
+}
 .benefits-title {
 	@extend %hidden;
 }
 .benefits__list {
 	@extend %list;
 	@include centredFlex;
+	flex-wrap: wrap;
 }
 .benefits__item {
 	width: 270px;
@@ -17,6 +21,7 @@
 }
 .benefits__decoration-bloc {
 	@include centredFlex;
+	flex-wrap: wrap;
 	margin-bottom: 30px;
 	height: 120px;
 	background-color: rgba(245, 244, 250, 1);
