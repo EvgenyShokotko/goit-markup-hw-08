@@ -1,7 +1,5 @@
 .team__section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-
+	@extend .section;
 	background-color: #f5f4fa;
 }
 .team__title {
@@ -15,13 +13,11 @@
 .team__list {
 	@extend %list;
 	@include centredFlex;
+	@include flexWrap(wrap, 30px);
 }
 .team__item {
 	text-align: center;
 	background-color: $page-maintitle-color;
-	&:not(:last-child) {
-		margin-right: 30px;
-	}
 }
 .team__border {
 	padding-top: 30px;

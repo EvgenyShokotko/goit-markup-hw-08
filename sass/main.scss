@@ -1,20 +1,26 @@
+// Utils
 @import "./utils/variables";
 @import "./utils/placeholder";
 @import "./utils/mixin";
 
-@import './shared/conteiner';
+// Shared
+@import "./shared/conteiner";
+@import "./shared/buttons";
+@import "./shared/section";
+@import "./shared/social-icons";
 
-
-
-@import "./components/header";
-@import "./components/logo";
-@import "./components/navigaton";
-@import "./components/contacts";
-@import "./components/hero-section";
-@import "./components/benefits-section";
-// @import "./components/services-section";
-// @import "./components/team-section";
-// @import "./components/social-icons";
+// Components
+@import "./components/header/header";
+@import "./components/logo/logo";
+@import "./components/page-navigation/navigaton";
+@import "./components/contacts/contacts";
+@import "./components/hero-section/hero-section";
+@import "./components/mobile-menu/mobile-button";
+@import "./components/mobile-menu/mobile-menu";
+@import "./components/mobile-menu/social-mobile";
+@import "./components/benefits-section/benefits-section";
+@import "./components/service-section/services-section";
+@import "./components/team-section";
 // @import "./components/clients-section";
 // @import "./components/products-section";
 // @import "./components/footer";
@@ -23,6 +29,3 @@
 // @import "./components/backdrop";
 // @import "./components/modal-window";
 // @import "./components/modal-form";
-@import "./components/mobile-button";
-@import "./components/mobile-menu";
-@import "./components/social-mobile"

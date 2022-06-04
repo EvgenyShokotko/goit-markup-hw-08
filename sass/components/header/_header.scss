@@ -1,0 +1,9 @@
+.header__border {
+	border-bottom: 1px solid #ececec;
+  }
+  
+  .header--flex {
+	@extend .container;
+	@include centredFlex(flex, null, center)
+  }
+  

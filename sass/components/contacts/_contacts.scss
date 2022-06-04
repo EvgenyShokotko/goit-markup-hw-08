@@ -1,0 +1,70 @@
+.contacts__list {
+	@extend %list;
+	margin-bottom: 64px;
+	transition: color 250ms $transition-cube;
+	
+	@media screen and (min-width: 768px) {
+		margin-bottom: 0;
+		margin-left: auto;
+		padding-top: 21px;
+	}
+	@media screen and (min-width: 1200px) {
+		@include centredFlex(flex, null, center);
+		padding-top: 0;
+	}
+}
+.contacts__item:not(:last-child) {
+	margin-bottom: 32px;
+	@media screen and (min-width: 768px) {
+	margin-bottom: 10px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+		margin-right: 50px;
+	}
+
+}
+.contacts__link {
+	text-decoration: none;
+	transition: color 250ms $transition-cube;
+	&:hover,
+	&:focus {
+	  color: $accent-colour;
+		}
+	&--mobile {
+		margin-bottom: 32px;
+		@include fonts (500, 34px, 40px,0.02em);
+		color: $accent-colour;}
+	&--mail {
+		@include fonts (null, 24px, 28px, null);
+		color: $title-text-colour;}
+
+
+	@media screen and (min-width: 768px) {
+		margin: 0;
+		@include centredFlex(flex, null, center); 
+		@include fonts (500, 12px, 14px,null);
+		color: $title-text-colour;
+	}		
+	@media screen and (min-width:1200px) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}
+.contacts-icon {
+	display: none;
+	@media screen and (min-width: 768px) {
+		display: block;
+		margin-right: 8px;
+		fill: currentColor;
+		&:hover,
+		&:focus {
+			color: $accent-colour;
+		}
+		@media screen and (min-width: 1200px) {
+			margin-right: 10px;
+		}
+	}
+}
+
+  

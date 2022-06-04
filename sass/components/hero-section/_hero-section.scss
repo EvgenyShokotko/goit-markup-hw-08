@@ -1,0 +1,80 @@
+.hero__section {
+	padding-top: 118px;
+	padding-bottom: 118px;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+
+	background-color: $hero-footer-backcolor;
+
+	max-width: 1600px;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../images/sectionphoto.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/sectionphoto.jpg);
+	}
+
+	@media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/sectionphoto.jpg);
+	}
+
+	@media screen and (min-width: 481px) and (max-width: 768.98px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/sectionphoto.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/sectionphoto.jpg);
+		}
+
+		@media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/sectionphoto.jpg);
+		}
+	}
+
+	@media screen and (min-width: 769px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/sectionphoto.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/sectionphoto.jpg);
+		}
+
+		@media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(../images/sectionphoto.jpg);
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+.hero__conteiner {
+	@extend .container;
+	@media screen and (max-width: 1199px) {
+		width: 410px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 696px;
+	}
+}
+
+.hero__title {
+	@include fonts(900, 26px, 42px, 0.06em, uppercase);
+	margin-bottom: 30px;
+	color: $page-maintitle-color;
+	@media screen and (min-width: 1200px) {
+		@include fonts(null, 44px, 60px, null, null);
+	}
+}

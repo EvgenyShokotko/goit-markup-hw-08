@@ -1,0 +1,29 @@
+.social-mobile__list {
+	@extend %list;
+	@include centredFlex(flex, null, baseline);
+	@include flexWrap(wrap, null);
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.social-mobile__item:not(:last-child)::after {
+	content: "";
+
+	display: inline-block;
+
+	width: 0px;
+	height: 22px;
+
+	margin: 0 10px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.social-mobile__link {
+	@include fonts(500, 18px, 22px, 0.02em);
+
+	text-decoration: none;
+
+	color: $accent-colour;
+}

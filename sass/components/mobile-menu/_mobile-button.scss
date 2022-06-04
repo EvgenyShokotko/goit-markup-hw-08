@@ -1,0 +1,32 @@
+.mobile__button {
+	position: relative;
+	z-index: 10;
+
+	width: 40px;
+	height: 40px;
+
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
+
+	color: $change-color-button;
+	background-color: transparent;
+
+	border: none;
+	&:hover,
+	&:focus {
+		fill: currentColor;
+	}
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+.mobile__button .menu__icon--vector {
+	display: none;
+}
+.mobile__button.is-open .menu__icon--vector {
+	display: block;
+}
+.mobile__button.is-open .menu__icon--menu {
+	display: none;
+}
