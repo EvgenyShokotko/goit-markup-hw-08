@@ -1,0 +1,93 @@
+.product__shadow-box {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    outline: 0;
+
+    color: $primary-text-colour;
+
+    transition: box-shadow 250ms &transition-cube;
+    
+    &:hover,
+    &:focus {
+    box-shadow:1px 4px 6px 0px rgba(0, 0, 0, 0.16), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+  }
+  
+  .product__photo {
+    @extend .img;
+  
+       @media screen and (max-width: 767px) {
+		width: 450px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+  @media screen and (min-width: 1199px) {
+		width: 370px;
+  }}
+  
+  .product__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product__overlay {
+	position: absolute;
+	transition: transform 250ms $transition-cube;
+	transform: translateY(0);
+
+	background-color: #2196f3e6;
+	height: 100%;
+	width: 100%;
+    }
+  
+  .product__description {
+  position: absolute;
+	transition: color 250ms $transition-cube, transform 250ms $transition-cube;
+	transform: translateY(0);
+
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 63px 24px;
+
+  @include fonts (400,18px,28px,0.03em);
+	color: rgba(255, 255, 255, 0);
+  }
+  
+  .product__group {
+	flex-grow: 1;
+
+	padding-top: 20px;
+	padding-left: 24px;
+	padding-bottom: 20px;
+	padding-right: 24px;
+
+	border-bottom: 1px solid rgba(238, 238, 238, 1);
+	border-left: 1px solid rgba(238, 238, 238, 1);
+	border-right: 1px solid rgba(238, 238, 238, 1);
+  }
+  
+  .product__name {
+   
+	margin-bottom: 4px;
+  @include fonts (700,18px,36px,0.06em);
+  }
+  
+  .product__direction{
+	margin: 0;
+  @include fonts (400,16px,30px,0.03em);
+  color: $title-text-colour;
+  }
+  .product__shadow-box:hover .product__description,
+  .product__shadow-box:focus .product__description {
+      color: rgba(255, 255, 255, 1);
+      transform: translateY(0%);
+  }
+  .product__shadow-box:hover .product__overlay,
+  .product__shadow-box:focus .product__overlay {
+      transform: translateY(-100%);
+  }
