@@ -62,12 +62,12 @@
 }
 .hero__conteiner {
 	@extend .container;
-	@media screen and (max-width: 1199px) {
-		width: 410px;
-	}
-	@media screen and (min-width: 1200px) {
-		width: 696px;
-	}
+	// @media screen and (max-width: 1199px) {
+	// 	width: 410px;
+	// }
+	// @media screen and (min-width: 1200px) {
+	// 	width: 696px;
+	// }
 }
 
 .hero__title {

@@ -1,0 +1,52 @@
+.subscribe-block__label {
+	@extend %hidden;
+}
+.subscribe-block {
+	text-align: center;
+	@media screen and (min-width: 1200px) {
+		text-align: start;
+		align-items: baseline;
+	}
+}
+.subscribe-block__title {
+	display: block;
+	margin-bottom: 20px;
+
+	@include fonts(700, 14px, 16px, 0.03em, uppercase);
+	color: $page-maintitle-color;
+}
+.subscribe-block__form {
+	@include centredFlex;
+	flex-direction: column;
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+	}
+}
+.subscribe-block__form input {
+	margin-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 16px;
+	outline: 0;
+	width: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+
+	color: $page-maintitle-color;
+	background-color: $hero-footer-backcolor;
+
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+		margin-right: 12px;
+		width: 358px;
+	}
+}
+.subscribe-block__form input::placeholder {
+	@include fonts(400, 16px, 20px, 0.03em);
+	color: rgba(255, 255, 255, 0.6);
+}

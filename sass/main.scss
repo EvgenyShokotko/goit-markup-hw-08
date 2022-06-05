@@ -10,11 +10,13 @@
 @import "./shared/social-icons";
 @import "./shared/image";
 
+@import "./shared/logo";
+@import "./shared/address";
+@import "./shared/contacts";
+
 // Components
 @import "./components/header/header";
-@import "./components/logo/logo";
 @import "./components/page-navigation/navigaton";
-@import "./components/contacts/contacts";
 @import "./components/hero-section/hero-section";
 @import "./components/mobile-menu/mobile-button";
 @import "./components/mobile-menu/mobile-menu";
@@ -24,9 +26,8 @@
 @import "./components/team-section/team-section";
 @import "./components/clients-section/clients-section";
 // @import "./components/products-section";
-@import "./components/footer";
-@import "./components/address";
-@import "./components/subscribe-block";
+@import "./components/footer/footer";
+@import "./components/footer/subscribe-block";
 // @import "./components/backdrop";
 // @import "./components/modal-window";
 // @import "./components/modal-form";

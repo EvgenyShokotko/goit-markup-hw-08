@@ -1,6 +1,13 @@
 .socialicons__list {
 	@extend %list;
-	@include centredFlex($type: flex, $position: flex-start);
+	@include centredFlex(flex, center, center);
+	margin-bottom: 60px;
+	@media screen and (min-width: 768px) {
+		margin-bottom: 0;
+	}
+	@media screen and (min-width: 1200px) {
+		@include centredFlex($type: flex, $position: flex-start);
+	}
 
 	&--direction {
 		@include centredFlex($type: flex, $position: center);
