@@ -70,7 +70,7 @@ gap: $gap;
   }
  
 
-	@mixin mq($type) {
+@mixin mq($type) {
 		$mobile: 480px;
 		$tablet: 768px;
 		$desktop: 1200px;
@@ -112,3 +112,17 @@ gap: $gap;
 		  }
 		}
 	  }
+
+@keyframes swing {
+		0% {transform: rotate(6deg)
+		};
+		4% {transform: rotate(-6deg)
+		};
+		8% {transform: rotate(3deg)
+		};
+		12% {transform: rotate(-3deg)
+		};
+		16% {transform: rotate(0deg)
+		};
+	
+	}

@@ -33,7 +33,7 @@
 .footer__social-block {
 	text-align: center;
 
-	@include mq(tablet) {
+	@include mq(desktop) {
 		text-align: start;
 		margin-right: auto;
 	}
