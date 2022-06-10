@@ -6,27 +6,39 @@
 	margin-bottom: 30px;
 	@include fonts(700, 28px, 33px, 0.03em);
 	text-align: center;
-	@media screen and (min-width: 1200px) {
+	@include mq(desktop) {
 		@include fonts(null, 36px, 42px, null);
 		margin-bottom: 50px;
 	}
 }
 .team__list {
 	@extend %list;
-	@include centredFlex;
-	@include flexWrap(wrap, 30px);
+	@include mq(tablet) {
+		@include centredFlex;
+		@include flexWrap(wrap, 30px);
+	}
 }
 .team__item {
 	text-align: center;
 	background-color: $page-maintitle-color;
+	&:not(:last-child) {
+		margin-bottom: 30px;
+		@include mq(tablet) {
+			margin-bottom: 0;
+		}
+	}
 }
 .team__image {
 	@extend .img;
-	@media screen and (max-width: 767px) {
+
+	@media screen and (max-width: 768px) {
 		width: 450px;
 	}
-	@media screen and (max-width: 1199px) {
+	@include mq(tablet) {
 		width: 354px;
+	}
+	@include mq(desktop) {
+		width: 270px;
 	}
 }
 

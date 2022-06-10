@@ -1,0 +1,38 @@
+.logo {
+	@include fonts(700, 24px, 28px, 0.03em);
+	font-family: "Raleway", sans-serif;
+	text-decoration: none;
+	color: $primary-text-colour;
+	&:hover,
+	&:focus {
+		color: $accent-colour;
+	}
+	transition: color 250ms $transition-cube;
+
+	@include mq(desktop) {
+		@include fonts(null, 26px, 31px, null);
+	}
+}
+.logo--position-top {
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	@include mq(tablet) {
+		margin-right: 88px;
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+	@include mq(desktop) {
+		margin-right: 93px;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+}
+.logo--position-bottom {
+	display: inline-block;
+	margin-bottom: 20px;
+	color: $page-maintitle-color;
+}
+.logo--blue {
+	color: $accent-colour;
+}

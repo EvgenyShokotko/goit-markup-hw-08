@@ -2,12 +2,10 @@
 	@extend %list;
 	@include centredFlex(flex, null, baseline);
 	@include flexWrap(wrap, 10px);
-
-	@media screen and (min-width: 768px) {
+	@include mq(tablet) {
 		display: none;
 	}
 }
-
 .social-mobile__item:not(:last-child)::after {
 	content: "";
 

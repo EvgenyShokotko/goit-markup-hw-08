@@ -3,7 +3,7 @@
 }
 .subscribe-block {
 	text-align: center;
-	@media screen and (min-width: 1200px) {
+	@include mq(desktop) {
 		text-align: start;
 		align-items: baseline;
 	}

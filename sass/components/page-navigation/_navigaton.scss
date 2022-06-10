@@ -1,55 +1,58 @@
 .navigation {
 	margin-bottom: 64px;
-	@media screen and (min-width: 768px) {
+	@include mq(tablet) {
 		margin: 0;
 	}
 }
 
 .navigation__list {
 	@extend %list;
-	@media screen and (min-width: 768px) {
+	@include mq(tablet) {
 		@include centredFlex;
-}
+	}
 }
 .navigation__item:not(:last-child) {
 	margin-bottom: 32px;
-	@media screen and (min-width: 768px) {
+	@include mq(tablet) {
 		margin-bottom: 0;
 		margin-right: 50px;
 	}
-  } 
-  .navigation__link {
+}
+.navigation__link {
 	@include fonts(500, 40px, 47px, 0.02em);
 	text-decoration: none;
-  	color: $primary-text-colour;
+	color: $primary-text-colour;
 	transition: color 250ms $transition-cube;
-	@media screen and (min-width: 768px){
+	@include mq(tablet) {
 		padding-top: 32px;
 		padding-bottom: 32px;
 		display: block;
 		@include fonts(null, 14px, 16px, null);
 	}
-     
+
 	&:hover,
 	&:focus {
-	  color: $accent-colour;
+		color: $accent-colour;
 	}
-  
-	&--current {
-	color: $accent-colour;
-	@media screen and (min-width: 768px){
-		position: relative;
-	}
-	@media screen and (min-width: 768px) {
-		&::after {
-		position: absolute;
-		left: 0;
-		bottom: -1px;
 
-		content: "";
-		width: 100%;
-		height: 4px;
-		background-color: $accent-colour;
-		border-radius: 2px;
+	&--current {
+		color: $accent-colour;
+
+		@include mq(tablet) {
+			position: relative;
+		}
+		@include mq(tablet) {
+			&::after {
+				position: absolute;
+				left: 0;
+				bottom: -1px;
+
+				content: "";
+				width: 100%;
+				height: 4px;
+				background-color: $accent-colour;
+				border-radius: 2px;
+			}
+		}
 	}
-  }}}
+}

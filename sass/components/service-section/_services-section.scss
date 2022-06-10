@@ -1,7 +1,7 @@
 .services__section {
 	@extend .section;
 	display: none;
-	@media screen and (min-width: 1200px) {
+	@include mq(desktop) {
 		display: block;
 		padding-top: 0;
 	}
@@ -27,11 +27,9 @@
 	height: 70px;
 
 	@include centredFlex;
+	@include fonts(700, 14px, 16px, 00.03em, uppercase);
 
-	font-weight: 700;
-	line-height: 1.17;
 	color: $page-maintitle-color;
-	text-transform: uppercase;
 
 	background-color: #2f303acc;
 }

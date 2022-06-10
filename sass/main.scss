@@ -3,16 +3,16 @@
 @import "./utils/placeholder";
 @import "./utils/mixin";
 
-// Shared
-@import "./shared/conteiner";
-@import "./shared/buttons";
-@import "./shared/section";
-@import "./shared/social-icons";
-@import "./shared/image";
+// Layouts
+@import "./layouts/conteiner";
+@import "./layouts/buttons";
+@import "./layouts/section";
+@import "./layouts/social-icons";
+@import "./layouts/image";
 
-@import "./shared/logo";
-@import "./shared/address";
-@import "./shared/contacts";
+@import "./layouts/logo";
+@import "./layouts/address";
+@import "./layouts/contacts";
 
 // Components
 @import "./components/header/header";
@@ -26,11 +26,9 @@
 @import "./components/team-section/team-section";
 @import "./components/clients-section/clients-section";
 @import "./components/products-section/product-card";
-@import './components/products-section/product-section';
+@import "./components/products-section/product-section";
 @import "./components/footer/footer";
 @import "./components/footer/subscribe-block";
 @import "./components/modal-form/backdrop";
 @import "./components/modal-form/modal-window";
 @import "./components/modal-form/modal-form";
-
-
