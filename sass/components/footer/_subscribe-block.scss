@@ -3,7 +3,12 @@
 }
 .subscribe-block {
 	text-align: center;
+	@include mq(tablet) {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	@include mq(desktop) {
+		margin: 0;
 		text-align: start;
 		align-items: baseline;
 	}
@@ -35,6 +40,10 @@
 
 	color: $page-maintitle-color;
 	background-color: $hero-footer-backcolor;
+	&:focus,
+	&:hover {
+		border: 1px solid $accent-colour;
+	}
 
 	@media screen and (min-width: 768px) {
 		width: 450px;

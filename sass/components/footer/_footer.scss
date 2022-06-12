@@ -5,17 +5,14 @@
 }
 .footer--flex {
 	@include mq(tablet) {
-		@include centredFlex(flex, center, baseline);
+		@include centredFlex(flex, space-between, baseline);
 		@include flexWrap(wrap, null);
-	}
+			}
 }
 .footer__firstblock {
 	margin-bottom: 60px;
 	text-align: center;
 
-	@include mq(tablet) {
-		margin-right: auto;
-	}
 	@include mq(desktop) {
 		text-align: start;
 		margin-bottom: 0;
@@ -32,9 +29,14 @@
 
 .footer__social-block {
 	text-align: center;
+	margin-bottom: 60px;
+	@include mq(tablet) {
+		margin-bottom: 0;
+	}
 
 	@include mq(desktop) {
 		text-align: start;
 		margin-right: auto;
+		
 	}
 }

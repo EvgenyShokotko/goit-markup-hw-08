@@ -36,6 +36,8 @@
   
   .product__overlay {
 	position: absolute;
+  overflow-y: scroll;
+
 	transition: transform 250ms $transition-cube;
 	transform: translateY(0);
 

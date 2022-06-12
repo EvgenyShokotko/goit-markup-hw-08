@@ -214,7 +214,6 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -371,7 +370,6 @@ p {
   .contacts__list {
     margin-bottom: 0;
     margin-left: auto;
-    padding-top: 21px;
   }
 }
 
@@ -423,10 +421,22 @@ p {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link--mobile {
+    padding-top: 20px;
+  }
+}
+
 .contacts__link--mail {
   font-size: 24px;
   line-height: 1.17;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__link--mail {
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -487,7 +497,7 @@ p {
 }
 
 .navigation {
-  margin-bottom: 64px;
+  margin-bottom: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -691,9 +701,16 @@ p {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu__content {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: 0;
     left: 0;
     z-index: 10;
@@ -705,10 +722,10 @@ p {
     visibility: hidden;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
   }
   .menu__content.is-open {
     visibility: visible;
@@ -717,7 +734,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.99px) {
   .mobile__button {
     display: none;
   }
@@ -1057,6 +1074,7 @@ p {
   height: 92px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
   color: #afb1b8;
   border: solid 1px #afb1b8;
   border-radius: 4px;
@@ -1132,6 +1150,7 @@ p {
 
 .product__overlay {
   position: absolute;
+  overflow-y: scroll;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1337,9 +1356,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1351,12 +1370,6 @@ p {
 .footer__firstblock {
   margin-bottom: 60px;
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__firstblock {
-    margin-right: auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1380,6 +1393,13 @@ p {
 
 .footer__social-block {
   text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social-block {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1393,8 +1413,16 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe-block {
+    margin: 0;
     text-align: start;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -1453,6 +1481,10 @@ p {
   background-color: #2f303a;
 }
 
+.subscribe-block__form input:focus, .subscribe-block__form input:hover {
+  border: 1px solid #2196f3;
+}
+
 @media screen and (min-width: 768px) {
   .subscribe-block__form input {
     width: 450px;
@@ -1508,8 +1540,8 @@ p {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  -webkit-transition: opacity 250ms var(--transition-cube), visibility 250ms var(--transition-cube);
-  transition: opacity 250ms var(--transition-cube), visibility 250ms var(--transition-cube);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -1525,12 +1557,11 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 1;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: calc(100% - 30px);
+  -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1541,7 +1572,7 @@ p {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 100%;
+    height: 609px;
   }
 }
 

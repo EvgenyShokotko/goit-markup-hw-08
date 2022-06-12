@@ -6,6 +6,10 @@ $hero-footer-backcolor: #2f303a;
 $change-color-button: #188ce8;
 $transition-cube: cubic-bezier(0.4, 0, 0.2, 1);
 
+// transition
+$transition-timing: 250ms;
+$transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 body {
 	background-color: $page-maintitle-color;
 	color: $primary-text-colour;

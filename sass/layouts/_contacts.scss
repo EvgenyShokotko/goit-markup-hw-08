@@ -6,7 +6,7 @@
 	@include mq(tablet) {
 		margin-bottom: 0;
 		margin-left: auto;
-		padding-top: 21px;
+		// padding-top: 21px;
 	}
 
 	@include mq(desktop) {
@@ -36,10 +36,17 @@
 		margin-bottom: 32px;
 		@include fonts(500, 34px, 40px, 0.02em);
 		color: $accent-colour;
+	@include mq(tablet) {
+		padding-top: 20px;
+	}
+
 	}
 	&--mail {
 		@include fonts(null, 24px, 28px, null);
 		color: $title-text-colour;
+		@include mq(tablet) {
+			padding-bottom: 20px;
+		}
 	}
 
 	@include mq(tablet) {

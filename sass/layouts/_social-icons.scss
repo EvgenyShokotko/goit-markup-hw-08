@@ -2,7 +2,6 @@
 	@extend %list;
 	@include centredFlex(flex, center, center);
 	@include flexWrap(wrap, 10px);
-	margin-bottom: 60px;
 	@include mq(tablet) {
 		margin-bottom: 0;
 	}
